@@ -8,8 +8,7 @@
 #include <QIODevice>
 #include "player.h"
 
-#define STRING_ROOT_PROJECT             "D:/Huy/Training/Qt Project/"
-#define STRING_ROOT_POKER               "Poker/Databases/"
+#define STRING_ROOT_POKER               "../Poker/Databases/"
 #define STRING_ACCOUNTS_LIST            "AccountList.json"
 #define STRING_NUMBER_OF_ACCOUNT        "Number of Account"
 #define STRING_JACKPOT                  "Jackpot"
@@ -25,8 +24,7 @@ private:
     int numAccount;
     int jackpot;
 
-    const QString ROOT_PROJECT = STRING_ROOT_PROJECT;
-    const QString ROOT_POKER = ROOT_PROJECT + STRING_ROOT_POKER;
+    const QString ROOT_POKER = STRING_ROOT_POKER;
     const QString LINK_DATABASE = ROOT_POKER + STRING_ACCOUNTS_LIST;
     QString Get_Link_Database(std::string);
 
